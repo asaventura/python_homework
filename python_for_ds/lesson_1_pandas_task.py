@@ -10,6 +10,7 @@ authors = pd.DataFrame(authors_dict)
 books = pd.DataFrame(books_dict)
 authors_price = pd.merge(authors, books, on='author_id', how='outer')
 top5 = authors_price.sort_values(by='price', ascending=False)
+
 print(authors)
 print(books)
 print(authors_price)

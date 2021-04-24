@@ -6,6 +6,7 @@ a_mean = a.mean(axis=0)
 a_centered = a - a_mean
 a_centered_sp = a_centered.T[0].dot(a_centered.T[1])
 
+
 print(a_mean)
 print(a_centered)
 print(a_centered_sp)
